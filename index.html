@@ -1,3 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareerIntel AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">CI</div>
+          <div>
+            <p class="eyebrow">CareerIntel AI</p>
+            <h1>Career intelligence workspace</h1>
+          </div>
+        </div>
+
+        <nav class="nav-list" aria-label="Dashboard sections">
+          <a href="#profile" class="nav-item active">Profile</a>
+          <a href="#report" class="nav-item">Career Report</a>
+          <a href="#resume" class="nav-item">Resume Analyzer</a>
+          <a href="#jobs" class="nav-item">Job Matcher</a>
+          <a href="#roadmap" class="nav-item">Roadmap</a>
+        </nav>
+
+        <section class="sidebar-panel">
+          <p class="panel-label">MVP Focus</p>
+          <p>
+            Turn a learner's background into job-fit scores, skill gaps, and a
+            practical growth plan.
+          </p>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Resume-ready project</p>
+            <h2>AI Career Intelligence Platform</h2>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-button" id="loadSampleButton" type="button">
+              Load sample
+            </button>
+            <button class="ghost-button" id="saveProfileButton" type="button">
+              Save profile
+            </button>
+            <button class="ghost-button" id="exportReportButton" type="button">
+              Export report
+            </button>
+          </div>
+        </header>
+
+        <section class="hero-band" aria-label="Project overview">
+          <div>
+            <p class="eyebrow">Personalized career strategy</p>
+            <h2>Find high-fit roles, missing skills, and portfolio projects.</h2>
+          </div>
+          <div class="hero-metrics" aria-label="Platform metrics">
+            <div>
+              <strong id="readinessMetric">74%</strong>
+              <span>readiness</span>
+            </div>
+            <div>
+              <strong id="gapMetric">4</strong>
+              <span>priority gaps</span>
+            </div>
+            <div>
+              <strong id="roleMetric">3</strong>
+              <span>matched roles</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="layout-grid">
+          <form class="profile-card" id="careerForm">
+            <div class="section-heading" id="profile">
+              <p class="eyebrow">Step 1</p>
+              <h3>Career profile</h3>
+            </div>
+
+            <label>
+              Full name
+              <input id="fullName" name="fullName" placeholder="Garima Sharma" />
+            </label>
+
+            <label>
+              Current level
+              <select id="level" name="level">
+                <option>Student</option>
+                <option>Fresher</option>
+                <option>Junior professional</option>
+                <option>Mid-level professional</option>
               </select>
             </label>
 
