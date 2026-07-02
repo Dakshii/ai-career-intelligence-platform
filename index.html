@@ -1,0 +1,160 @@
+              </select>
+            </label>
+
+            <label>
+              Target role
+              <select id="targetRole" name="targetRole">
+                <option>AI Product Manager</option>
+                <option>Data Analyst</option>
+                <option>Machine Learning Engineer</option>
+                <option>Software Engineer</option>
+                <option>UX Researcher</option>
+                <option>Cybersecurity Analyst</option>
+                <option>Cloud Engineer</option>
+              </select>
+            </label>
+
+            <label>
+              Current skills
+              <textarea
+                id="skills"
+                name="skills"
+                rows="4"
+                placeholder="Python, SQL, Excel, communication, machine learning"
+              ></textarea>
+            </label>
+
+            <label>
+              Career goal
+              <textarea
+                id="goal"
+                name="goal"
+                rows="3"
+                placeholder="I want to get an internship or entry-level role in AI."
+              ></textarea>
+            </label>
+
+            <button class="primary-button" type="submit">Generate career report</button>
+            <p class="status-message" id="profileStatus" role="status"></p>
+          </form>
+
+          <section class="report-area" id="report">
+            <div class="section-heading">
+              <p class="eyebrow">Step 2</p>
+              <h3>Career match report</h3>
+            </div>
+
+            <div class="score-panel">
+              <div>
+                <span class="score-label">Career readiness</span>
+                <strong id="readinessScore">74%</strong>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <span id="readinessBar"></span>
+              </div>
+              <p id="readinessText">
+                Your profile shows strong direction. Add role-specific projects
+                and measurable resume outcomes to improve your score.
+              </p>
+            </div>
+
+            <div class="cards-grid" id="roleCards"></div>
+
+            <div class="insight-grid">
+              <article>
+                <h4>Priority skill gaps</h4>
+                <ul id="gapList"></ul>
+              </article>
+              <article>
+                <h4>Portfolio project ideas</h4>
+                <ul id="projectList"></ul>
+              </article>
+            </div>
+
+            <div class="insight-grid">
+              <article>
+                <h4>Learning plan</h4>
+                <ul id="learningList"></ul>
+              </article>
+              <article>
+                <h4>Interview stories to prepare</h4>
+                <ul id="interviewList"></ul>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="resume-section" id="resume">
+          <div class="section-heading">
+            <p class="eyebrow">Step 3</p>
+            <h3>Resume analyzer</h3>
+          </div>
+          <div class="resume-grid">
+            <label>
+              Paste resume text
+              <textarea
+                id="resumeText"
+                rows="9"
+                placeholder="Paste your resume summary, projects, skills, or experience here..."
+              ></textarea>
+            </label>
+            <div class="resume-results">
+              <div>
+                <span class="score-label">Resume strength</span>
+                <strong id="resumeScore">0%</strong>
+              </div>
+              <ul id="resumeTips">
+                <li>Add resume text to get instant suggestions.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="resume-section" id="jobs">
+          <div class="section-heading">
+            <p class="eyebrow">Step 4</p>
+            <h3>Job description matcher</h3>
+          </div>
+          <div class="resume-grid">
+            <label>
+              Paste job description
+              <textarea
+                id="jobDescription"
+                rows="8"
+                placeholder="Paste a job description to compare it with your current skills..."
+              ></textarea>
+            </label>
+            <div class="resume-results job-results">
+              <div>
+                <span class="score-label">JD alignment</span>
+                <strong id="jobScore">0%</strong>
+              </div>
+              <ul id="jobTips">
+                <li>Paste a job description to discover repeated requirements.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="roadmap-section" id="roadmap">
+          <div class="section-heading">
+            <p class="eyebrow">Step 5</p>
+            <h3>30-day action roadmap</h3>
+          </div>
+          <div class="roadmap" id="roadmapList"></div>
+        </section>
+
+        <section class="roadmap-section" id="saved">
+          <div class="section-heading">
+            <p class="eyebrow">Project proof</p>
+            <h3>Saved career reports</h3>
+          </div>
+          <div class="saved-reports" id="savedReports"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
